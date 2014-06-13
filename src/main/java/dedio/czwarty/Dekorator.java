@@ -8,7 +8,8 @@ package dedio.czwarty;
  *
  * @author Indzia
  */
-public interface Wypisywalny 
+public abstract class Dekorator extends Wersor
 {
-    abstract void wypisz();
+    public abstract String about_wersor();
 }
+

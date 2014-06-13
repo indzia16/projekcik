@@ -2,9 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package diedo.czwarty;
+package dedio.czwarty;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
@@ -14,32 +15,36 @@ import java.util.Random;
  */
 public class Czwarty 
 {
-    public static void main(String[] args) 
+    public static void main(String[] args) throws IOException
     {
+        Singleton singleton = Singleton.Singleton();
+        
+        singleton.powitanie();
+        
         Wersor[] tab = new Wersor[10];
         
         System.out.println("\t\t\t  ---------------- WEKTORY ----------------\n");
         
         tab[0]  = new Wersor(1,0,0);
-        tab[0].wypisz();        
+        System.out.println(tab[0].about_wersor()); 
         tab[1]  = new Wersor(0,0,5);
-        tab[1].wypisz();       
+        System.out.println(tab[1].about_wersor());      
         tab[2]  = new Wersor(4,0,0);
-        tab[2].wypisz();       
+        System.out.println(tab[2].about_wersor());       
         tab[3]  = new Wersor(0,7,0);
-        tab[3].wypisz();     
+        System.out.println(tab[3].about_wersor());     
         tab[4]  = new Wersor(0,0,2);
-        tab[4].wypisz();
+        System.out.println(tab[4].about_wersor());
         tab[5]  = new Wersor(8,0,0);
-        tab[5].wypisz();
+        System.out.println(tab[5].about_wersor());
         tab[6]  = new Wersor(3,0,0);
-        tab[6].wypisz();
+        System.out.println(tab[6].about_wersor());
         tab[7]  = new Wersor(0,1,0);
-        tab[7].wypisz();
+        System.out.println(tab[7].about_wersor());
         tab[8]  = new Wersor(0,0,9);
-        tab[8].wypisz();
+        System.out.println(tab[8].about_wersor());
         tab[9]  = new Wersor(6,0,0);
-        tab[9].wypisz();
+        System.out.println(tab[9].about_wersor());
         
         System.out.println("\n\n\t\t  ---------------- OPERACJE NA WEKTORACH ----------------\n");
         
@@ -62,7 +67,7 @@ public class Czwarty
         tab[4].wypisz();
         tab[8].pomnoz(tab[4]);
         System.out.println("\t\t\t\t           Wynik ");
-        tab[8].wypisz();
+        System.out.println(tab[8].about_wersor());
         
         System.out.println("\n\t\t\t           * MNOZENIE I DODAWANIE * ");
         tab[2].wypisz();
@@ -71,7 +76,7 @@ public class Czwarty
         tab[2].pomnoz(tab[7]);
         tab[2].dodaj(tab[1]);
         System.out.println("\t\t\t\t           Wynik ");
-        tab[2].wypisz();
+        System.out.println(tab[2].about_wersor());
         
         tab[2].iloscElementow(tab[2]);
         try
@@ -177,9 +182,7 @@ public class Czwarty
         System.out.println();
         m1.wypisz();
         
-        
-        
-        
+        singleton.napisy();        
         
     }
     
