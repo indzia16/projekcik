@@ -8,6 +8,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
+import dedio.czwarty.Wersor;
+import dedio.czwarty.Widok;
+import dedio.czwarty.Kontroler;
 
 /**
  *
@@ -17,6 +20,23 @@ public class Czwarty
 {
     public static void main(String[] args) throws IOException
     {
+        
+Wersor wersor     = new Wersor();
+         Widok widok       = new Widok(wersor);
+         Kontroler kontroler = new Kontroler(wersor, widok);
+        
+         widok.setVisible(true);
+        
+//         
+//         java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new Widok1().setVisible(true);
+//            }
+//        });
+         
+         
+         
+         
         Singleton singleton = Singleton.Singleton();
         
         singleton.powitanie();
@@ -184,8 +204,28 @@ public class Czwarty
         
         singleton.napisy();        
         
-    }
     
+    
+    
+    System.out.println("\n\n\t\t      -------------- ITERATOR WEKTORA --------------");
+    
+        WektorKolekcja vectorCollect = new WektorKolekcja();
+        
+        for (int i = 0; i < vectorCollect.kolekcja.length; i++) 
+        {
+            vectorCollect.kolekcja[i] = new Wektor(10);
+        }
+        
+        Iterator iterator = vectorCollect.getIterator();
+        
+        while (iterator.hasNext()) 
+        {
+            Object object = iterator.next();
+            System.out.println(" ");
+            ((Wektor)object).wypisz();
+        }
+    
+}   
     
     public static void do_pliku(Object o) throws FileNotFoundException
     {

@@ -79,4 +79,20 @@ public class Macierz extends Algebra implements Dzialaj, Wypisywalny
         System.out.println();
     }
     
+    
+    public String wypisz2() 
+    {
+        StringBuilder tmp = new StringBuilder("\n");
+        for(int i=0; i<a.length; i++)
+        {
+            tmp.append("\t\t                             | ");
+            for(int j=0; j<a[i].length; j++)
+            {
+                tmp.append( String.format(a[i][j] + " "));
+            }
+            tmp.append( " |\n" );
+        }
+        
+        return tmp.toString();
+    }
 }

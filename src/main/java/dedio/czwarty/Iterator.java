@@ -8,9 +8,8 @@ package dedio.czwarty;
  *
  * @author Indzia
  */
-public interface Dzialaj
+public interface Iterator 
 {
-    abstract void dodaj(Object o);
-    abstract void odejmij(Object o);
-    abstract void pomnoz(Object o);
+    public boolean hasNext();
+    public Object next();
 }

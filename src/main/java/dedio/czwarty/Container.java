@@ -8,9 +8,7 @@ package dedio.czwarty;
  *
  * @author Indzia
  */
-public interface Dzialaj
+public interface Container 
 {
-    abstract void dodaj(Object o);
-    abstract void odejmij(Object o);
-    abstract void pomnoz(Object o);
+    public Iterator getIterator();
 }
