@@ -17,12 +17,8 @@ public class Wersor extends Wektor implements Wypisywalny
     
     public Wersor(double x1, double x2, double x3) { super(x1, x2, x3); }
 
-    
-
-
-
-    
-    public String about_wersor() {
+    public String about_wersor() 
+    {
         if(x[1] == 0 & x[2] == 0)
         {
             return String.format("\t\t    To jest wersor osi X o dlugosci - " + x[0]+"\n");
@@ -39,12 +35,8 @@ public class Wersor extends Wektor implements Wypisywalny
         return null;
     }
 
-    String getValue() {
+    String getValue() 
+    {
         return about_wersor().toString();
     }
-
-    
-    
-    
-   
 }

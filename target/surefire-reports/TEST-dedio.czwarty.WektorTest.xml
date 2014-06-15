@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.004" errors="0" skipped="0" tests="5" name="dedio.czwarty.WektorTest">
+<testsuite failures="0" time="0.036" errors="0" skipped="0" tests="5" name="dedio.czwarty.WektorTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Sun\SDK\jdk\jre\bin"/>
@@ -59,9 +59,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0.002" classname="dedio.czwarty.WektorTest" name="testDodaj"/>
-  <testcase time="0" classname="dedio.czwarty.WektorTest" name="testOdejmij"/>
-  <testcase time="0.001" classname="dedio.czwarty.WektorTest" name="testPomnoz"/>
-  <testcase time="0.001" classname="dedio.czwarty.WektorTest" name="testObliczDlougosc"/>
-  <testcase time="0" classname="dedio.czwarty.WektorTest" name="testWypisz"/>
+  <testcase time="0.001" classname="dedio.czwarty.WektorTest" name="testDodaj"/>
+  <testcase time="0.003" classname="dedio.czwarty.WektorTest" name="testOdejmij"/>
+  <testcase time="0" classname="dedio.czwarty.WektorTest" name="testPomnoz"/>
+  <testcase time="0" classname="dedio.czwarty.WektorTest" name="testObliczDlougosc"/>
+  <testcase time="0.032" classname="dedio.czwarty.WektorTest" name="testWypisz"/>
 </testsuite>

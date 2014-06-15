@@ -42,7 +42,7 @@ public class Singleton
     
     public void napisy()
     {
-        System.out.println("\t\t\t\t\t\t\tWykonala : DEDO INGA \n");
+        System.out.println("\t\t\t\t\t\t\tWykonala : DEDIO INGA \n");
     }
 
 }

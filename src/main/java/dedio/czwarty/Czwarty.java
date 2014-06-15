@@ -21,22 +21,12 @@ public class Czwarty
     public static void main(String[] args) throws IOException
     {
         
-Wersor wersor     = new Wersor();
-         Widok widok       = new Widok(wersor);
+         Wersor wersor = new Wersor();
+         Widok widok = new Widok(wersor);
          Kontroler kontroler = new Kontroler(wersor, widok);
         
          widok.setVisible(true);
-        
-//         
-//         java.awt.EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                new Widok1().setVisible(true);
-//            }
-//        });
-         
-         
-         
-         
+
         Singleton singleton = Singleton.Singleton();
         
         singleton.powitanie();
@@ -47,6 +37,9 @@ Wersor wersor     = new Wersor();
         
         tab[0]  = new Wersor(1,0,0);
         System.out.println(tab[0].about_wersor()); 
+        tab[0] = new TestDek(tab[0]);
+        System.out.println(tab[0].about_wersor()); 
+        
         tab[1]  = new Wersor(0,0,5);
         System.out.println(tab[1].about_wersor());      
         tab[2]  = new Wersor(4,0,0);
@@ -201,13 +194,9 @@ Wersor wersor     = new Wersor();
         v1.wypisz();
         System.out.println();
         m1.wypisz();
+
         
-        singleton.napisy();        
-        
-    
-    
-    
-    System.out.println("\n\n\t\t      -------------- ITERATOR WEKTORA --------------");
+        System.out.println("\n\n\t\t      -------------- ITERATOR WEKTORA --------------");
     
         WektorKolekcja vectorCollect = new WektorKolekcja();
         
@@ -224,6 +213,8 @@ Wersor wersor     = new Wersor();
             System.out.println(" ");
             ((Wektor)object).wypisz();
         }
+        
+        singleton.napisy();     
     
 }   
     

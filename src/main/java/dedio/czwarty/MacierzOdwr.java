@@ -28,10 +28,8 @@ public class MacierzOdwr extends Macierz implements Wypisywalny
                                             {a[1][1]/det, -a[0][1]/det},
                                             {-a[1][0]/det, a[0][0]/det}
                                             }
-                                        );
+                                  );
         }
         return tmp;
     }
-    
-    
 }

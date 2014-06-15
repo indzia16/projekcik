@@ -262,9 +262,10 @@ public class Kontroler
     }
     
     
-    class ClearListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            //wersor.kasuj();
+    class ClearListener implements ActionListener 
+    {
+        public void actionPerformed(ActionEvent e) 
+        {
             widok.reset();
         }
     }
